@@ -54,21 +54,18 @@ public class ContactDAOImple implements ContactDAO {
 				/* setName 사용을 원한다면 */
 				// list.get(index); -> 특정 인덱스 값 꺼냈음
 				list.get(index).setName(vo.getName());
-				// list[index].setName(vo.getName());
 			case 2:
 				// list.set(index,vo);
-				list.get(index).setName(vo.getPhone());
-				// list[index].setPhone(vo.getPhone());
+				list.get(index).setPhone(vo.getPhone());
 				break;
 			case 3:
 				// list.set(index,vo);
-				list.get(index).setName(vo.getEmail());
-				// list[index].setEmail(vo.getEmail());
+				list.get(index).setEmail(vo.getEmail());
 				break;
 			default:
 				System.out.println("존재하지 않는 항목을 고르셨습니다.");
 				return 0;
-			}
+			}	
 			return 1;
 
 		} else {
